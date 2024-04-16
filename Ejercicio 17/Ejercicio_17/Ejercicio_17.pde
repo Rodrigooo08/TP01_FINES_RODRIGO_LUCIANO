@@ -1,11 +1,11 @@
 //Ejercicio 17
 float x1=100, y1=100, x2=200, y2=400;
- PImage linkImagen;//Imagen de link
- PImage tesoroImagen;//Imagen del objeto tesoro
+ PImage linkImage;//Imagen de link
+ PImage tesoroImage;//Imagen del objeto tesoro
 float distanciaTesoro=50;
  void setup(){
    size(800,600);
-   linkImage = loadImage("enlace.gif");
+   linkImage = loadImage("link.gif");
    tesoroImage = loadImage("Cofre.gif");
    linkImage.resize(80, 80);
    tesoroImage.resize(80,80);
@@ -26,9 +26,9 @@ float distanciaTesoro=50;
     //Cordenadas mostradas en pantalla
     String coordenadas = "X1:" + mouseX + ", Y1: " + mouseY;
     fill(0);
-    texSize(20);
-    textAling(RIGHT, TOP);
-    tex(coordenadas, width,0);
+    textSize(20);
+    textAlign(RIGHT, TOP);
+    text(coordenadas, width,0);
  }
   void mouseMoved(){
     x1=mouseX;
